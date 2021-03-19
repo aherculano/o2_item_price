@@ -1,4 +1,4 @@
-namespace Core.Model.ItemType
+namespace Core.Model.Items
 {
     public class ItemType
     {
