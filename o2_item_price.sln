@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{241C29ED-14B5-432D-8D4B-7FFC83C72629}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{241C29ED-14B5-432D-8D4B-7FFC83C72629}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{8E56E888-5F9C-46ED-9040-226F9890F535}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{8E56E888-5F9C-46ED-9040-226F9890F535}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{5D9548AC-45DA-4E32-B4D1-EBBADACE0745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{5D9548AC-45DA-4E32-B4D1-EBBADACE0745}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BD7416D9-9DCC-494E-AB5B-385369FC82CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{241C29ED-14B5-432D-8D4B-7FFC83C72629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,5 +57,16 @@ Global
 		{5D9548AC-45DA-4E32-B4D1-EBBADACE0745}.Release|x64.Build.0 = Release|Any CPU
 		{5D9548AC-45DA-4E32-B4D1-EBBADACE0745}.Release|x86.ActiveCfg = Release|Any CPU
 		{5D9548AC-45DA-4E32-B4D1-EBBADACE0745}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{241C29ED-14B5-432D-8D4B-7FFC83C72629} = {BD7416D9-9DCC-494E-AB5B-385369FC82CA}
+		{8E56E888-5F9C-46ED-9040-226F9890F535} = {BD7416D9-9DCC-494E-AB5B-385369FC82CA}
+		{5D9548AC-45DA-4E32-B4D1-EBBADACE0745} = {BD7416D9-9DCC-494E-AB5B-385369FC82CA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2123FEAE-A798-49DB-A222-10893B7ABF5B}
 	EndGlobalSection
 EndGlobal

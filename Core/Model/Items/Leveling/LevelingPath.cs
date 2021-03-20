@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Model.Items.Item;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,17 +9,15 @@ namespace Core.Model.Items.Leveling
 {
     public class LevelingPath
     {
-        public int Id { get; set; }
-        public int ItemId { get; set; }
+        public ItemName ItemId { get; set; }
         public List<int> UpgradeListId { get; set; }
 
         protected LevelingPath() { 
             //ORM/ODM
         }
 
-        public LevelingPath(int id, int itemId, List<int> upgradeListId)
+        public LevelingPath(ItemName itemId, List<int> upgradeListId)
         {
-            Id = id;
             ItemId = itemId;
             UpgradeListId = upgradeListId;
         }
